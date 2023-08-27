@@ -24,7 +24,7 @@ export const {
 				httpOnly: true,
 				sameSite: 'none',
 				path: '/',
-				secure: false
+				secure: true
 			}
 		}
 	},
