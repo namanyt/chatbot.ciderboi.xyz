@@ -7,26 +7,26 @@ import { Button } from '@/components/ui/button'
 import { IconMoon, IconSun } from '@/components/ui/icons'
 
 export function ThemeToggle() {
-  const { setTheme, theme } = useTheme()
-  const [_, startTransition] = React.useTransition()
+	const { setTheme, theme } = useTheme()
+	const [_, startTransition] = React.useTransition()
 
-  return (
-    <Button
-      // @ts-ignore 
-      variant="ghost"
-      size="icon"
-      onClick={() => {
-        startTransition(() => {
-          setTheme(theme === 'light' ? 'dark' : 'light')
-        })
-      }}
-    >
-      {!theme ? null : theme === 'dark' ? (
-        <IconMoon className="transition-all" color='white' />
-      ) : (
-        <IconSun className="transition-all" color='yellow' />
-      )}
-      <span className="sr-only">Toggle theme</span>
-    </Button>
-  )
+	return (
+		<Button
+			// @ts-ignore
+			variant="ghost"
+			size="icon"
+			onClick={() => {
+				startTransition(() => {
+					setTheme(theme === 'light' ? 'dark' : 'light')
+				})
+			}}
+		>
+			{!theme ? null : theme === 'dark' ? (
+				<IconMoon className="transition-all" color="white" />
+			) : (
+				<IconSun className="transition-all" color="yellow" />
+			)}
+			<span className="sr-only">Toggle theme</span>
+		</Button>
+	)
 }
