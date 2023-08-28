@@ -11,10 +11,11 @@ import { Header } from '@/components/header'
 
 export const metadata: Metadata = {
 	title: {
-		default: 'AI Chatbot',
-		template: `%s - AI Chatbot`
+		default: 'Ahri AI',
+		template: `%s - Ahri AI`
 	},
 	description: 'An AI-powered chatbot',
+	metadataBase: new URL('https://https://5ffd-103-59-75-117.ngrok-free.app'),
 	themeColor: [
 		{ media: '(prefers-color-scheme: light)', color: 'white' },
 		{ media: '(prefers-color-scheme: dark)', color: 'black' }
@@ -23,6 +24,28 @@ export const metadata: Metadata = {
 		icon: '/favicon.ico',
 		shortcut: '/favicon-16x16.png',
 		apple: '/apple-touch-icon.png'
+	},
+	openGraph: {
+		type: 'website',
+		locale: 'en_US',
+		url: 'https://chatbot.ciderboi.xyz',
+		siteName: 'Ahri AI',
+		images: [
+			{
+				url: './favicon-16x16.png',
+				width: 1200,
+				height: 630,
+				alt: 'Ahri AI'
+			}
+		]
+	},
+	twitter: {
+		site: 'chatbot.ciderboi.xyz',
+		title: 'Ahri AI',
+		card: 'summary_large_image',
+		description: 'An AI-powered chatbot',
+		images: ['./og.png'],
+		creator: '@ciderboi'
 	}
 }
 

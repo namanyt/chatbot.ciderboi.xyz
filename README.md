@@ -1,1 +1,1 @@
-AI ChatBot
+Ahri Ai
